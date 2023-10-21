@@ -12,7 +12,7 @@
 .hero-page{
     min-height: 100vh;
     width: 100%;
-    background-image: url(/css/Page-1/images/section-1/homeBackground.avif);
+    background-image: url(./css/Page-1/images/section-1/homeBackground.avif);
     background-position: top;
     background-size: cover;
     position: relative;
