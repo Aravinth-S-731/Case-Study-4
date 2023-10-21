@@ -1,0 +1,123 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'MetropolisNF', sans-serif;
+}
+:root{
+    --color-white: #ffffff;
+    --color-black: #151515;
+    --color-grey: #555;
+}
+
+/* ---------- Section - 6 ---------- */
+.section-6-grid{
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 0 165px;
+    padding-bottom: 120px;
+    border-bottom: 1px solid var(--color-grey);
+}
+.section-6-grid div{
+    padding: 0 52px ;
+    width: auto;
+}
+.section-6-grid h1{
+    color: var(--color-black);
+    font-size: 32px;
+    font-weight: 800;
+    line-height: 110%;
+    text-transform: uppercase;
+    margin-bottom: 32px;
+}
+.section-6-grid p{
+    color: var(--color-grey);
+    font-size: 18px;
+    line-height: 160%;
+    text-align: justify;
+}
+.section-6-grid table{
+    width: 350px;
+}
+.section-6-grid th{
+    color: var(--color-black);
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 110%;
+    text-transform: uppercase;
+
+    text-align: start;
+    padding-bottom: 45px;
+}
+.section-6-grid td{
+    padding: 16px;
+    border-bottom: 1px solid var(--color-grey);
+}
+.section-6-grid .spec{
+    color: var(--color-grey);
+    font-size: 16px;
+    line-height: 150%;
+    text-align: start;
+}
+.section-6-grid .data{
+    color: var(--color-black);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 110%;
+    text-align: end;
+}
+
+@media screen and (min-width: 480px) and (max-width: 1040px) {
+    .section-6-grid{
+        padding: 0 25px;
+        padding-bottom: 80px;
+    }
+    .section-6-grid div{
+        padding: 0 20px;
+        width: auto;
+    }
+    .section-6-grid table{
+        width: auto;
+    }
+    .section-6-grid h1{
+        font-size: 22px;
+    }
+    .section-6-grid p{
+        font-size: 13px;
+        line-height: auto;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .section-6-grid{
+        padding: 0 10px;
+        padding-bottom: 50px;
+        grid-template-columns: auto;
+    }
+    .section-6-grid div{
+        padding: 0 10px;
+        width: auto;
+    }
+    .section-6-grid table{
+        width: auto;
+    }
+    .section-6-grid h1{
+        font-size: 18px;
+    }
+    .section-6-grid p{
+        font-size: 12px;
+        line-height: auto;
+        margin-bottom: 40px;
+    }
+    .section-6-grid th{
+        padding-bottom: 20px;
+    }
+    .section-6-grid td{
+        padding: 8px;
+    }
+    .section-6-grid .spec{
+        font-size: 12px;
+    }
+    .section-6-grid .spec{
+        font-size: 15px;
+    }
+}

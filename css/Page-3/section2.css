@@ -1,0 +1,174 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'MetropolisNF', sans-serif;
+}
+:root{
+    --color-white: #ffffff;
+    --color-black: #151515;
+    --color-grey: #555;
+}
+/* ---------- Section - 2 ---------- */
+.section-2{
+    margin: 80px 84px 90px 96px;
+}
+.section-2 i{
+    cursor: pointer;
+}
+.section-2-grid{
+    display: grid;
+    grid-template-columns: 30% auto;
+}
+.filter h1{
+    color: var(--color-black);
+    font-size: 44px;
+    font-weight: 800;
+    line-height: 110%;
+    text-transform: uppercase;
+    margin-bottom: 71px;
+}
+
+aside{
+    margin-right: 95px;
+}
+
+/* ----- CAR TYPE ----- */
+.cartype-dropDown h3{
+    color: var(--color-black);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 110%;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.cartype-dropDown i{
+    color: var(--color-black);
+    font-size: 20px;
+    align-items: end;
+}
+.cartype-dropDown .minus{
+    display: none;
+}
+
+.carType{
+    position: fixed;
+    display: none;
+}
+.carType input{
+    margin-left: 30px;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+.carType label{
+    color: var(--color-grey);
+    font-size: 16px;
+    line-height: 150%;
+}
+
+/* ----- SPEED ----- */
+.speed-dropDown h3{
+    color: var(--color-black);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 110%;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    border-top:  1px solid var(--color-grey);
+    padding-top: 25px;
+    display: flex;
+    justify-content: space-between;
+}
+.speed-dropDown i{
+    color: var(--color-black);
+    font-size: 20px;
+    align-items: end;
+}
+.speed-dropDown .minus{
+    display: none;
+}
+
+.speedRange{
+    position: fixed;
+    display: none;
+}
+.speedRange input{
+    margin-left: 30px;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+.speedRange label{
+    color: var(--color-grey);
+    font-size: 16px;
+    line-height: 150%;
+}
+.filter .faTimes{
+    display: none;
+}
+
+@media screen and (min-width: 480px) and (max-width: 1040px) {
+    .filter{
+        position: fixed;
+        background-color: #e8e8e8;
+        height: 100vh;
+        width: 350px;
+        top: 12.5%;
+        left: -370px;
+        z-index: 2;
+        transition: 1s;
+        padding-left: 20px;
+    }
+    .filter .faTimes{
+        display: block;
+        margin: 20px;
+        font-size: 28px;
+        cursor: pointer;
+        text-align: end;
+    }
+    .cartype-dropDown i{
+        color: var(--color-black);
+        font-size: 20px;
+        align-items: end;
+    }
+    .cartype-dropDown .minus{
+        display: none;
+    }
+    .speed-dropDown .minus{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .section-2{
+        margin: 40px 0 90px 0;
+    }
+    .filter{
+        position: fixed;
+        background-color: #e8e8e8;
+        height: 100vh;
+        width: 345px;
+        top: 11.5%;
+        left: -365px;
+        z-index: 2;
+        transition: 1s;
+        padding-left: 20px;
+    }
+    .filter .faTimes{
+        display: block;
+        margin: 20px;
+        font-size: 28px;
+        cursor: pointer;
+        text-align: end;
+    }
+    .cartype-dropDown i{
+        color: var(--color-black);
+        font-size: 20px;
+        align-items: end;
+    }
+    .cartype-dropDown .minus{
+        display: none;
+    }
+    .speed-dropDown .minus{
+        display: none;
+    }
+}

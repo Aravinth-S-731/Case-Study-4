@@ -1,0 +1,150 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+/* ---------- Section - 8 ---------- */
+.section-8{
+    padding: 120px 0 120px 0;
+    border-bottom: 1px solid var(--font-col-black);
+}
+.section-8-grid{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.section-8-grid .grid-1 .grid-content{
+    margin-left: 165px;
+}
+.section-8-grid .grid-1 h1{
+    color: var(--font-col-black);
+    font-size: var(--header-font-size);
+    text-transform: uppercase;
+    font-weight: 800;
+    line-height: 110%;
+    width: 90%;
+}
+.section-8-grid .grid-1 p{
+    color: var(--subText-font-col);
+    font-size: var(--subText-font-size);
+    line-height: 160%;
+    margin: 40px 0 40px 0;
+    width: 445px;
+}
+.section-8-grid .grid-1 button{
+    font-size: 14px;
+    color: var(--font-col-white);
+    background-color: var(--font-col-black);
+    font-weight: 800;
+    text-transform: uppercase;
+    border: none;
+    letter-spacing: 2.1px;
+    padding: 18px 32px;
+    transition: all 0.5s;
+    text-align: center;
+    width: 280px;
+
+    cursor: pointer;
+}
+.section-8-grid .grid-1 button span{
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+.section-8-grid .grid-1 button span:after{
+
+    content: '>>';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+.section-8-grid .grid-1 button:hover span{
+    padding-right: 25px;
+}
+.section-8-grid .grid-1 button:hover span::after{
+    opacity: 1;
+    right: 0;
+}
+.section-8-grid .grid-2{
+    text-align: end;
+}
+.section-8-grid .grid-2 img{
+    right: 0;
+    height: auto;
+    width: 100%;
+}
+
+@media screen and (min-width: 720px) and (max-width: 980px) {
+    .section-8-grid .grid-1 .grid-content{
+        margin-left: 50px;
+        width: 360px;
+    }
+    .section-8-grid .grid-1 h1{
+        width: auto;
+        font-size: 20px;
+    }
+    .section-8-grid .grid-1 p{
+        width: auto;
+        font-size: 10px;
+        margin: 20px 0 20px 0;
+        line-height: auto;
+    }
+    .section-8-grid .grid-1 button{
+        font-size: 10px;
+        padding: 9px 16px;
+    }
+}
+
+@media screen and (min-width: 360px) and (max-width: 720px) {
+    .section-8{
+        padding-top: 60px 0 60px 0;
+    }
+    .section-8-grid{
+        grid-template-columns: auto;
+    }
+    .section-8-grid .grid-1 .grid-content{
+        margin-left: 5px;
+        width: 335px;
+    }
+    .section-8 .grid-2 img{
+        margin-top: 50px;
+        width: 100%;
+        height: auto;
+    }
+    .section-8-grid .grid-1 h1{
+        width: auto;
+        font-size: 25px;
+    }
+    .section-8-grid .grid-1 p{
+        width: auto;
+        font-size: 15px;
+        margin: 10px 0 10px 0;
+    }
+    .section-8-grid .grid-1 button{
+        font-size: 14px;
+        padding: 9px 16px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .section-8-grid{
+        grid-template-columns: auto;
+    }
+    .section-8-grid .grid-1{
+        margin-left: 20px;
+    }
+    .section-8-grid .grid-1 h1{
+        width: auto;
+        font-size: 25px;
+    }
+    .section-8-grid .grid-1 p{
+        width: auto;
+        font-size: 15px;
+        margin: 10px 0 10px 0;
+    }
+    .section-8-grid .grid-1 button{
+        font-size: 14px;
+        padding: 9px 16px;
+    }
+}

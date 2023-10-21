@@ -1,0 +1,131 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/* ---------- Section - 10 ---------- */
+.section-10{
+    background-color: #151515;
+}
+.section-10-grid-1{
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 56px 165px 82px 165px;
+}
+.section-10-grid-1 h1{
+    font-size: 24px;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 800;
+    line-height: 26px;
+    letter-spacing: 0.75em;
+    text-transform: uppercase;
+}
+.section-10-grid-1 .phNo{
+    text-align: end;
+    font-size: 24px;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 800;
+    line-height: 26px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.section-10-grid-1 p{
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: end;
+}
+
+.section-10-grid-2{
+    display: grid;
+    grid-template-columns: 50% auto auto;
+    padding: 0 165px 80px 165px;
+}
+.section-10-grid-2 h2{
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 110%;
+}
+.section-10-grid-2 p{
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 160%;
+    margin: 35px 0 35px 0;
+}
+.mail-input{
+    padding: 1%;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    border: 1px solid #FFFFFF;
+    background: transparent;
+    text-align: center;
+    color: #ffffff;
+}
+.mail-btn{
+    padding: 1.4%;
+    left: 0;
+    font-weight: 800;
+    font-size: 14px;
+    letter-spacing: 0.15em;
+    color: #151515;
+    border: 1px solid #ffffff;
+}
+
+.our-site{
+    margin-left: 125px;
+}
+.follow-us{
+    margin-left: 50px;
+}
+
+@media screen and (min-width: 480px) and (max-width: 980px) {
+    .section-10-grid-1{
+        grid-template-columns: auto;
+        padding: 56px 100px 82px 100px;
+    }
+    .section-10-grid-1 p{
+        margin-top: 10px;
+        text-align: start;
+    }
+    .section-10-grid-1 .phNo{
+        text-align: start;
+    }
+    .section-10-grid-2{
+        padding:  0 100px 80px 100px;
+    }
+    .our-site{
+        margin: auto;
+    }
+    .follow-us{
+        margin: 0 auto auto auto;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .section-10-grid-1{
+        grid-template-columns: auto;
+        padding: 56px 10px 82px 10px;
+    }
+    .section-10-grid-1 p{
+        margin-top: 10px;
+        text-align: start;
+    }
+    .section-10-grid-1 .phNo{
+        text-align: start;
+    }
+    .section-10-grid-2{
+        grid-template-columns: auto;
+        padding: 0 10px 40px 10px;
+    }
+    .our-site{
+        margin: 20px auto auto 0;
+        text-align: start;
+    }
+    .follow-us{
+        margin: 20px auto auto 0;
+    }
+}

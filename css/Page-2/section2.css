@@ -1,0 +1,54 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'MetropolisNF', sans-serif;
+}
+
+/* ---------- Section - 2 ---------- */
+/* .preview-block{
+    width: 100vw;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-image: url(images/section-2/carHeroimg.avif);
+} */
+.backImg{
+    width: 99vw;
+    height: auto;
+}
+.preview-block{
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.preview-block img{
+    padding: 12px;
+}
+
+@media screen and (min-width: 480px) and (max-width: 1040px) {
+    .backImg{
+        width: 100vw;
+    }
+    .preview-block{
+        top: 27%;
+        left: 7%;
+    }
+    .preview-block img{
+        display: block;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .backImg{
+        width: 100%;
+    }
+    .preview-block{
+        display: flex;
+        top: 35%;
+    }
+    .preview-block img{
+        width: 54px;
+        height: 33px;
+        padding: 10px;
+    }
+}

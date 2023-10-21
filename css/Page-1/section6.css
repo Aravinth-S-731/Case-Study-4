@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'MetropolisNF', sans-serif;
+}
+:root{
+    --font-col-white: #ffffff;
+    --subText-font-col: #555;
+    --subText-font-size: 18px;
+}
+
+/* ---------- Section - 6 ---------- */
+.section-6-grid{
+    display: grid;
+    grid-template-columns: auto 610px;
+}
+.section-6-grid .grid-1{
+    background: #151515;
+    height: 720px;
+}
+.section-6-grid .grid-content{
+    margin: 158px 0 0 65px;
+}
+.section-6-grid h1{
+    color: var(--font-col-white);
+    font-size: var(--head-font-size);
+    font-weight: 800;
+    line-height: 110%;
+    text-transform: uppercase;
+    width: 445px;
+}
+.section-6-grid p{
+    color: var(--font-col-white);
+    width: 445px;
+    margin: 40px 0 40px 0;
+}
+.section-6-grid button{
+    font-size: 14px;
+    color: #151515;
+    background-color: var(--font-col-white);
+    font-weight: 800;
+    text-transform: uppercase;
+    border: none;
+    letter-spacing: 2.1px;
+    padding: 18px 32px;
+    transition: all 0.5s;
+    text-align: center;
+    width: 250px;
+
+    cursor: pointer;
+}
+.section-6-grid button span{
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+.section-6-grid button span:after{
+
+    content: '>>';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+.section-6-grid button:hover span{
+    padding-right: 25px;
+}
+.section-6-grid button:hover span::after{
+    opacity: 1;
+    right: 0;
+}
+
+@media screen and (min-width: 480px) and (max-width: 1040px) {
+    .section-6-grid{
+        grid-template-columns: auto auto;
+    }
+    .section-6-grid img{
+        width: 100vw;
+    }
+    .section-6-grid .grid-content{
+        position: absolute;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .section-6-grid{
+        grid-template-columns: auto auto;
+        height: 420px;
+    }
+    .section-6-grid img{
+        width: 360px;
+        height: 424px;
+    }
+    .section-6-grid .grid-content{
+        position: absolute;
+        margin: 20px;
+    }
+    .section-6-grid h1{
+        font-size: 34px;
+        width: auto;
+    }
+    .section-6-grid p{
+        font-size: 15px;
+        width: auto;
+    }
+    .section-6-grid .grid-2{
+        height: 420px;
+    }
+}

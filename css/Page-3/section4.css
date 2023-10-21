@@ -1,0 +1,88 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'MetropolisNF', sans-serif;
+}
+:root{
+    --color-white: #ffffff;
+    --color-black: #151515;
+    --color-grey: #555;
+}
+
+/* ---------- Section - 4 [Page number grid] ---------- */
+.page-number{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-evenly;
+}
+.page-prev{
+    width: 50px;
+    height: 50px;
+    background: var(--color-black);
+    color: var(--color-white);
+    transition: 0.5s ease;
+}
+.page-prev:hover{
+    background: var(--color-white);
+    color: var(--color-black);
+    transition: 0.5s ease;
+}
+.page-next{
+    width: 50px;
+    height: 50px;
+    background: var(--color-black);
+    color: var(--color-white);
+    transition: 0.5s ease;
+}
+.page-next:hover{
+    background: var(--color-white);
+    color: var(--color-black);
+    transition: 0.5s ease;
+}
+.page-number i{
+    margin-top: 18px;
+}
+.page-number-grid{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    column-gap: 40px;
+}
+.page-number-grid div{
+    width: 50px;
+    height: 50px;
+}
+.page-number-grid div:hover{
+    border: 2px solid var(--color-black);
+}
+.page-number-grid p{
+    margin-top: 18px;
+}
+
+@media screen and (min-width: 480px) and (max-width: 1040px) {
+    .page-number{
+        justify-content: center;
+        position: absolute;
+    }
+    .page-prev{
+        margin-right: 20px;
+    }
+    .page-next{
+        margin-left: 20px;
+    }
+    .page-number-grid{
+        column-gap: 30px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .page-number-grid{
+        display: none;
+    }
+    .page-prev{
+        margin-left: 50%;
+        margin-right: 20px;
+    }
+    .page-next{
+        margin-left: 20px;
+    }
+}

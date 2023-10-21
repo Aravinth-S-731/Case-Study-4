@@ -1,0 +1,233 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'MetropolisNF', sans-serif;
+}
+:root{
+    --font-color-white: #ffffff;
+    --font-color-black: #151515;
+}
+
+/* ---------- Hero Page  ---------- */
+.hero-page{
+    min-height: 100vh;
+    width: 100%;
+    background-image: url(/css/Page-1/images/section-1/homeBackground.avif);
+    background-position: top;
+    background-size: cover;
+    position: relative;
+
+    animation-name: backgroundAnimation;
+    animation-duration: 2s;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4% 6% 0 6%;
+}
+.logo-name{
+    font-size: 24px;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 800;
+    line-height: 26px;
+    letter-spacing: 0.75em;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+.logo-name:hover{
+    text-shadow: 0 0 7px #000;
+    transition: 0.5s;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: var(--font-color-white);
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+.nav-links ul li a{
+    color: var(--font-color-white);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-decoration: none;
+}
+.nav-links ul li a img{
+    width: 22px;
+    height: 22px;
+}
+nav .fa{
+    display: none;
+}
+
+.header-content{
+    position: absolute;
+    top: 50%;
+    left: 10%;
+}
+.header-content h1{
+    color: var(--font-color-white);
+    font-size: 64px;
+    line-height: 60px;
+    text-transform: uppercase;
+    width: 635px;
+
+    animation-name: headerAnimation;
+    animation-duration: 5s;
+    animation-timing-function: ease;
+}
+.header-content p{
+    color: var(--font-color-white);
+    font-size: 16px;
+    line-height: 20px;
+    margin: 12px 0 12px 0;
+
+    animation-name: headerAnimation;
+    animation-duration: 5s;
+    animation-timing-function: ease;    
+}
+.header-content button{
+    padding: 15px;
+    font-size: 14px;
+    font-weight: 800;
+    border: none;
+    transition: 0.5s;
+
+    animation-name: buttonAnimation;
+    animation-duration: 5s;
+    animation-timing-function: ease;
+}
+.header-content button:hover{
+    background: var(--font-color-black);
+    color: var(--font-color-white);
+    border: none;
+    transition: 0.5s;
+}
+
+@keyframes backgroundAnimation {
+    0%  {
+        background: linear-gradient(to bottom right, black, white, 0.2);
+        opacity: 0.9;
+    }
+    100% {
+        background: linear-gradient(to top left, black, white, 0.2);
+    }
+}
+@keyframes headerAnimation{
+    0%  {
+        position: relative;
+        right: -1000px
+    }
+    100% {
+        position: relative;
+        right: 0px;
+    }
+}
+@keyframes buttonAnimation {
+    0%  {
+        position: absolute;
+        left: -500px;
+    }
+    100% {
+        position: absolute;
+        left: 0px;
+    }
+}
+
+@media screen and (min-width: 510px) and (max-width:980px) {
+    .hero-page{
+        min-height: 50vh;
+    }
+    .nav-links{
+        position: fixed;
+        background-color: var(--font-color-black);
+        height: 100vh;
+        width: 250px;
+        top: 0;
+        right: -250px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+    .nav-links ul{
+        padding: 30px;
+    }
+    .nav-links ul li{
+        display: block;
+    }
+    nav .fa{
+        display: block;
+        color: var(--font-color-white);
+        margin: 20px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .header-content{
+        top: 40%;
+    }
+    .header-content h1{
+        font-size: 30px;
+        width: auto;
+        line-height: 40px;
+    }
+}
+
+@media screen and (max-width: 510px) {
+    .hero-page{
+        min-height: 50vh;
+    }
+    .nav-links{
+        position: fixed;
+        background-color: var(--font-color-black);
+        height: 100vh;
+        width: 250px;
+        top: 0;
+        right: -250px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+    .nav-links ul{
+        padding: 30px;
+    }
+    .nav-links ul li{
+        display: block;
+    }
+    nav .fa{
+        display: block;
+        color: var(--font-color-white);
+        margin: 20px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .header-content{
+        top: 25%;
+        margin: 10px;
+    }
+    .header-content h1{
+        font-size: 22px;
+        width: auto;
+        line-height: 30px;
+    }
+    .header-content p{
+        font-size: 10px;
+        line-height: 12px;
+    }
+}

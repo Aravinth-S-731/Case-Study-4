@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'MetropolisNF', sans-serif;
+}
+:root{
+    --font-col-black: #151515;
+    --subText-font-col: #555;
+    --subText-font-size: 18px;
+    --price-font-size: 32px
+}
+
+/* ---------- Section - 5 ---------- */
+.section-5{
+    text-align: center;
+    margin: 152px 152px 82px 152px;
+}
+.section-5 h1{
+    columns: var(--font-col-black);
+    font-size: 44px;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-bottom: 64px;
+}
+.section-5-grid{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+.section-5-grid .grid{
+    width: 360px;
+    margin-bottom: 64px;
+}
+.section-5-grid img{
+    width: 350px;
+    height: 280px;
+}
+.section-5-grid .grid-content{
+    text-align: start;
+}
+.section-5-grid h3{
+    color: var(--font-col-black);
+    font-size: 20px;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-top: 40px;
+}
+.section-5-grid p{
+    color: var(--subText-font-col);
+    font-size: var(--subText-font-col);
+    line-height: 160%;
+    margin: 24px 0 24px 0;
+}
+.section-5-grid h2{
+    color: var(--font-col-black);
+    font-size: var(--price-font-size);
+    font-weight: 500;
+    margin-bottom: 24px;
+}
+.section-5-grid button{
+    color: var(--font-col-black);
+    font-size: 14px;
+    letter-spacing: 2.1px;
+
+    padding: 14px 32px;
+    gap: 16px;
+    background: transparent;
+    border: 1px solid var(--font-col-black);
+    transition: 0.5s;
+}
+.section-5-grid button:hover{
+    background: #151515;
+    color: #ffffff;
+    transition: 0.5s;
+}
+.browse-btn{
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 800;
+    letter-spacing: 2.1px;
+    background: var(--font-col-black);
+    border: none;
+
+    padding: 18px 32px;
+    transition: 0.5s;
+}
+.browse-btn:hover{
+    background: transparent;
+    color: var(--font-col-black);
+    border: 1px solid var(--font-col-black);
+    transition: 0.5s;
+}
+
+@media screen and (min-width: 480px) and (max-width: 1040px) {
+    .section-5{
+        margin: 76px 26px 41px 26px;
+    }
+    .section-5-grid{
+        grid-template-columns: auto auto;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .section-5{
+        margin: 52px 13px 20px 13px;
+    }
+    .section-5 h1{
+        font-size: 22px;
+    }
+    .section-5-grid{
+        grid-template-columns: auto;
+    }
+    .section-5-grid .grid{
+        width: 320px;
+        margin-bottom: 32px;
+    }
+    .section-5-grid img{
+        width: 320px;
+        height: auto;
+    }
+    .section-5-grid p{
+        line-height: auto;
+        margin: 12px 0 12px 0;
+    }
+    .section-5-grid h2{
+        margin-bottom: 12px;
+    }
+}

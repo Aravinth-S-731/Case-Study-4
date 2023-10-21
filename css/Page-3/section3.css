@@ -1,0 +1,178 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'MetropolisNF', sans-serif;
+}
+:root{
+    --color-white: #ffffff;
+    --color-black: #151515;
+    --color-grey: #555;
+}
+/* ---------- Section - 3 ---------- */
+.search-sort{
+    justify-content: end;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 10px;
+    margin-bottom: 65px;
+}
+.searchBox input{
+    width: 278px;
+    height: 54px;
+    font-size: 16px;
+    text-align: center;
+    border: 1px solid var(--color-grey);
+}
+.sortBox{
+    border: 1px solid var(--color-grey);
+    width: 165px;
+    height: 55.6px;
+    text-align: center;
+}
+.sortBox p{
+    color: var(--color-grey);
+    margin-top: 18px;
+}
+.filterBox{
+    visibility: hidden;
+    border:  1px solid var(--color-grey);
+    width: 165px;
+    height: 55.6px;
+    text-align: center;
+}
+.filterBox P{
+    color: var(--color-grey);
+    margin-top: 18px;
+}
+
+/* ---------- section - 3 [product list item] ---------- */
+.section-3{
+    text-align: center;
+    margin: auto;
+}
+.section-3-grid{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 30px;
+}
+.section-3-grid .grid{
+    width: auto;
+    margin-bottom: 64px;
+    text-align: start;
+}
+.section-3-grid img{
+    width: 278px;
+    height: 210px;
+}
+.section-3-grid .grid-content{
+    text-align: start;
+}
+.section-3-grid h3{
+    color: var(--color-black);
+    font-size: 18px;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-top: 40px;
+}
+.section-3-grid p{
+    color: var(--subText-font-col);
+    font-size: var(--subText-font-col);
+    line-height: 160%;
+    margin: 24px 0 24px 0;
+}
+.section-3-grid h2{
+    color: var(--color-black);
+    font-size: var(--price-font-size);
+    font-weight: 500;
+    margin-bottom: 24px;
+}
+.section-3-grid button{
+    color: var(--color-black);
+    font-size: 14px;
+    letter-spacing: 2.1px;
+
+    padding: 14px 32px;
+    gap: 16px;
+    background: transparent;
+    border: 2px solid var(--color-black);
+    transition: 0.5s;
+}
+.section-3-grid button:hover{
+    background: #151515;
+    color: #ffffff;
+    transition: 0.5s;
+}
+.browse-btn{
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 800;
+    letter-spacing: 2.1px;
+    background: var(--color-black);
+    border: none;
+
+    padding: 18px 32px;
+    transition: 0.5s;
+}
+.browse-btn:hover{
+    background: transparent;
+    color: var(--color-black);
+    border: 1px solid var(--color-black);
+    transition: 0.5s;
+}
+
+@media screen and (min-width: 480px) and (max-width: 1040px) {
+    .carProductList{
+        position: static;
+    }
+    .section-3{
+        margin: 76px 26px 41px 26px;
+    }
+    .section-3-grid{
+        grid-template-columns: auto auto;
+    }
+    .filterBox{
+        visibility: visible;
+    }
+    .search-sort{
+        justify-content: start;
+        grid-template-columns: auto auto auto;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .section-3{
+        margin: 52px 13px 20px 13px;
+    }
+    .section-3 h1{
+        font-size: 22px;
+    }
+    .section-3-grid{
+        grid-template-columns: auto;
+    }
+    .section-3-grid .grid{
+        width: 320px;
+        margin-bottom: 32px;
+    }
+    .section-3-grid img{
+        width: 320px;
+        height: auto;
+    }
+    .section-3-grid p{
+        line-height: auto;
+        margin: 12px 0 12px 0;
+    }
+    .section-3-grid h2{
+        margin-bottom: 12px;
+    }
+    .filterBox{
+        visibility: visible;
+    }
+    .search-sort{
+        justify-content: start;
+        grid-template-columns: auto auto;
+        margin: 0 7px 0 7px;
+    }
+    .searchBox{
+        display: none;
+    }
+}
